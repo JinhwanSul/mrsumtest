@@ -1,7 +1,5 @@
 # Mr.Sum: Large-scale Video Summarization Dataset and Benchmark
 
-## Mr.Sum Dataset
-
 Mr.Sum contains 31,892 videos selected from [YouTube-8M](https://research.google.com/youtube8m/). 
 
 Mr.Sum uses 'Most replayed' statistics on YouTube as a importance score labels.
@@ -9,9 +7,21 @@ Mr.Sum uses 'Most replayed' statistics on YouTube as a importance score labels.
 
 They are aggregated statistics from more than 50,000 watchers which makes this labeling reliable.
 
-We provide meta data of our videos in [meta_data.csv](dataset/filtered_with_headers.csv) file. Refer to the [doc](dataset/DATA.md) for more details.
+**In this repository,**
 
-## Most replayed crawling
+1. We provide meta data and most replayed labels for 31,892 videos in [dataset](dataset) folder.
+
+2. We provide Most replayed crawler enabling expansion of our dataset.
+
+3. We provide sample codes to apply Mr.Sum dataset on a video summarization model.
+
+----
+
+## Mr.Sum dataset
+
+
+
+## Most replayed crawler
 
 Mr.Sum can grow bigger with more CC-BY videos on YouTube.
 
@@ -21,7 +31,7 @@ From the meta data, especially with YouTube video id, you can crawl 'Most replay
 python crawler.py --vid <video_id>
 ```
 
-## Prepare Dataset
+## Preparing Mr.Sum Dataset
 
 We provide data loader which takes h5 datasets inputs
 
