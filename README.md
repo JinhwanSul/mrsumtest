@@ -1,6 +1,31 @@
-# mrsumtest
-Test
-Jihoon Han Test
+# Mr.Sum: Large-scale Video Summarization Dataset and Benchmark
+
+## Mr.Sum Dataset
+
+Mr.Sum contains 31,892 videos selected from [YouTube-8M](https://research.google.com/youtube8m/). 
+
+Mr.Sum uses 'Most replayed' statistics on YouTube as a importance score labels.
+<img src="images/most_replayed.jpeg" alt="Example of Most replayed" width="300" height="200">
+
+They are aggregated statistics from more than 50,000 watchers which makes this labeling reliable.
+
+We provide meta data of our videos in [meta_data.csv](dataset/filtered_with_headers.csv) file. Refer to the [doc](dataset/DATA.md) for more details.
+
+## Most replayed crawling
+
+Mr.Sum can grow bigger with more CC-BY videos on YouTube.
+
+From the meta data, especially with YouTube video id, you can crawl 'Most replayed' statistics.
+
+```
+python crawler.py --vid <video_id>
+```
+
+## Prepare Dataset
+
+We provide data loader which takes h5 datasets inputs
+
+
 
 1. given csv meta data --> youtube video id 를 가져옵니다.
 
@@ -17,4 +42,3 @@ Jihoon Han Test
 - evaluate
 
 5. 결과
-
