@@ -78,7 +78,7 @@ These are some few examples of Most replayed.
 </div>
 
 <div>
-  <img src="images/most_replayed.jpeg" alt="image" style="float:left;width:30%;margin-right:10px;">
+  <img src="images/most_replayed.jpeg" alt="image" style="float:left;width:30%;margin-left:10px;">
   <table style="float:right;width:60%;">
     <tr>
       <td><img src="images/AC_sparta_1_gif.gif" alt="gif1" width="25%"></td>
