@@ -2,9 +2,6 @@
 
 Mr. Sum is a large-scale video summarization dataset, which contains 31,892 videos selected from YouTube-8M dataset and reliable frame importance score labels aggregated from 50,000+ users per video.  
 
-## YouTube's Most replayed statistics
-Mr.Sum uses 'Most replayed' statistics on YouTube as a importance score labels.
-
 <!-- <img src="images/most_replayed.jpeg" alt="Example of Most replayed" width="300" height="200"> -->
 
 
@@ -18,7 +15,7 @@ Mr.Sum uses 'Most replayed' statistics on YouTube as a importance score labels.
 
 3. We provide sample codes to apply Mr.Sum dataset on a video summarization model. -->
 
-## Most Replayed statistics Exhibition
+## Most Replayed Statistics for Summarization
 
 ### Example 1: AC Sparta Praha - Top 10 goals, season 2013/2014
 
