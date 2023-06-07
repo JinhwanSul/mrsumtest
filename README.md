@@ -24,6 +24,7 @@ These are some few examples of Most replayed.
   <img src="images/most_replayed.jpeg" width="100" />
 </p>
 
+<p align="left">
 <table>
   <tr>
     <td><img src="images/AC_sparta_1_gif.gif" width="100" /></td>
@@ -34,6 +35,7 @@ These are some few examples of Most replayed.
     <td><img src="images/AC_sparta_4_gif.gif" width="100" /></td>
   </tr>
 </table>
+</p>
 
 ### Update
 - **2023.06.07**, Repository created.
