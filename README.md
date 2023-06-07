@@ -18,14 +18,28 @@ These are some few examples of Most replayed.
 
 3. We provide sample codes to apply Mr.Sum dataset on a video summarization model. -->
 
-<img src="images/most_replayed.jpeg" alt="Sample video" align="right" width="200"/>
-
-<div style="text-align:right">
-    | Column 1 | Column 2 |
-    | --- | --- |
-    | ![gif1]("images/AC_sparta_1_gif.gif") | ![gif2]("images/AC_sparta_2_gif.gif") |
-    | ![gif3]("images/AC_sparta_3_gif.gif") | ![gif4]("images/AC_sparta_4_gif.gif") |
+<div style="display:flex;">
+    <div style="flex:1;padding-right:10px;">
+        <img src="images/most_replayed.jpeg" alt="Sample video" width="100%"/>
+    </div>
+    <div style="flex:1;padding-left:10px;">
+        <table>
+            <tr>
+                <td>Column 1</td>
+                <td>Column 2</td>
+            </tr>
+            <tr>
+                <td><img src="images/AC_sparta_1_gif.gif" alt="gif1" width="100%"/></td>
+                <td><img src="images/AC_sparta_2_gif.gif" alt="gif2" width="100%"/></td>
+            </tr>
+            <tr>
+                <td><img src="images/AC_sparta_3_gif.gif" alt="gif3" width="100%"/></td>
+                <td><img src="images/AC_sparta_4_gif.gif" alt="gif4" width="100%"/></td>
+            </tr>
+        </table>
+    </div>
 </div>
+
 
 
 ### Update
