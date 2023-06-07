@@ -12,22 +12,24 @@ These are some few examples of Most replayed.
 
 
 <div>
-  <img src="images/most_replayed.jpeg" alt="Image" style="float: left; margin-right: 1px;" width="270" height="180"/>
   <table>
     <tr>
+      <img src="images/most_replayed.jpeg" alt="Image" style="float: left; margin-right: 1px;" width="300" height="200"/>  
+    </tr>
+    <tr>
       <td>
-        <img src="images/AC_sparta_1_gif.gif" alt="GIF 1", width="120" height="85"/>
+        <img src="images/AC_sparta_1_gif.gif" alt="GIF 1", width="150" height="100"/>
       </td>
       <td>
-        <img src="images/AC_sparta_2_gif.gif" alt="GIF 2", width="120" height="85"/>
+        <img src="images/AC_sparta_2_gif.gif" alt="GIF 2", width="150" height="100"/>
       </td>
     </tr>
     <tr>
       <td>
-        <img src="images/AC_sparta_3_gif.gif" alt="GIF 3", width="120" height="85" />
+        <img src="images/AC_sparta_3_gif.gif" alt="GIF 3", width="150" height="100" />
       </td>
       <td>
-        <img src="images/AC_sparta_4_gif.gif" alt="GIF 4", width="120" height="85" />
+        <img src="images/AC_sparta_4_gif.gif" alt="GIF 4", width="150" height="100" />
       </td>
     </tr>
   </table>
@@ -91,6 +93,7 @@ Coming Soon!
 
 ----
 ## License
-This dataset is licensed under [Creative Commons Attribution 4.0 International (CC BY 4.0) license](https://creativecommons.org/licenses/by/4.0/) following YouTube-8M dataset. Also, all the Mr.Sum dataset users must comply with [YouTube Terms of Service](https://www.youtube.com/static?template=terms) and [YouTube API Services Terms of Service](https://developers.google.com/youtube/terms/api-services-terms-of-service#agreement).
+This dataset is licensed under [Creative Commons Attribution 4.0 International (CC BY 4.0) license](https://creativecommons.org/licenses/by/4.0/) following the YouTube-8M dataset. All the Mr.Sum dataset users must comply with [YouTube Terms of Service](https://www.youtube.com/static?template=terms) and [YouTube API Services Terms of Service](https://developers.google.com/youtube/terms/api-services-terms-of-service#agreement).
+
 
 ----
