@@ -79,13 +79,13 @@ The first most viewed scene, noted as 1 in the video, as soon as Neo meets Agent
 You need four fields on your `mrsum.h5` to prepare.
 
 1. `features`: Video frame features from YouTube-8M dataset.
-2. `gtscore`: Most replayed statistics in normalized 0 to 1 score.
-3. `change_points`: Shot boundary information obtained with [Kernel Temporal Segmentation](https://github.com/TatsuyaShirakawa/KTS) algorithm.
-4. `gtsummary`: Ground truth summary obtained from by solving 0/1 knapsack algorithm on shots.
+2. `gtscore`: Most replayed statistics normalized in 0 to 1 score.
+3. `change_points`: Shot boundary information obtained using the  [Kernel Temporal Segmentation](https://github.com/TatsuyaShirakawa/KTS) algorithm.
+4. `gtsummary`: Ground truth summary obtained by solving 0/1 knapsack algorithm on shots.
 
-We already provide three fields, `gtscore`, `change_points`, and `gtsummary`, inside `mrsum.h5`. 
+We provide three fields, `gtscore`, `change_points`, and `gtsummary`, inside `mrsum.h5`. 
 
-After downloading YouTube-8M dataset, you can add `features` field using
+After downloading YouTube-8M dataset, you can add the `features` field using
 ```
 python preprocess/preprocess.py
 ```
@@ -95,18 +95,18 @@ Please read [DATASET.md](dataset/DATASET.md) for more details about the Mr.Sum.
 ----
 ## Apply Mr.Sum on your summarization model
 
-We provide a sample code for training and evaluating a summarization model on Mr.Sum.
+We provide a sample code for training and evaluating summarization models on Mr.Sum.
 
-A summarization model developer can test their own model by implementing pytorch model under the `model/networks` folder.
+A summarization model developer can test their own model by implementing pytorch models under the `model/networks` folder.
 
 We provide the [`SimpleMLP`](model/networks/mlp.py) summarization model as an example.
 
-You can train your model on Mr.Sum dataset using the command below. Modify the configuration with your taste!
+You can train your model on Mr.Sum dataset using the command below. Modify configurations with your taste!
 ```
 python main.py --train True --batch_size 8 --epochs 50 --tag exp1
 ```
 
-We referred to the code from [PGL-SUM](https://github.com/e-apostolidis/PGL-SUM).
+We referred the code from [PGL-SUM](https://github.com/e-apostolidis/PGL-SUM).
 
 ----
 
