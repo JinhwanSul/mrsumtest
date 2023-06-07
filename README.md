@@ -20,7 +20,7 @@ These are some few examples of Most replayed.
 
 
 <p align="center">
-  <img src="images/AC_sparta_most_replayed.jpeg" width="60%">
+  <img src="images/AC_sparta_most_replayed.png" width="60%">
 </p>
 
 | 1st Most Replayed | 2nd Most Replayed | 3rd Most Replayed | 4th Most Replayed |
