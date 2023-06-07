@@ -23,10 +23,10 @@ These are some few examples of Most replayed.
 
 <div style="display:flex;">
   <div style="width:40%;">
-    <img src="images/most_replayed.jpeg" width="100%">
+    <img src="images/most_replayed.jpeg" width="100">
   </div>
   <div style="width:60%;">
-    <table style="width:100%;">
+    <table style="width:100;">
       <tr>
         <td><img src="images/AC_sparta_1_gif.gif"></td>
         <td><img src="images/AC_sparta_2_gif.gif"></td>
