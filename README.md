@@ -60,7 +60,7 @@ These are some few examples of Most replayed.
 <div style="display:flex;">
   <div style="flex:1;">
     <p align="left">
-      <img src="images/most_replayed.jpeg" width="100" />
+      <img src=c width="100" />
     </p>
   </div>
   <div style="flex:1;text-align:right;">
@@ -76,6 +76,21 @@ These are some few examples of Most replayed.
     </table>
   </div>
 </div>
+
+<div>
+  <img src="images/most_replayed.jpeg" alt="image" style="float:left;width:30%;margin-right:10px;">
+  <table style="float:right;width:60%;">
+    <tr>
+      <td><img src="images/AC_sparta_1_gif.gif" alt="gif1"></td>
+      <td><img src="images/AC_sparta_2_gif.gif" alt="gif2"></td>
+    </tr>
+    <tr>
+      <td><img src="images/AC_sparta_3_gif.gif" alt="gif3"></td>
+      <td><img src="images/AC_sparta_4_gif.gif" alt="gif4"></td>
+    </tr>
+  </table>
+</div>
+
 
 
 ### Update
