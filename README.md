@@ -1,7 +1,10 @@
-# Mr.Sum: Large-scale Video Summarization Dataset and Benchmark
+# Mr. Sum: Large-scale Video Summarization Dataset and Benchmark
 
-Mr.Sum contains 31,892 videos selected from [YouTube-8M](https://research.google.com/youtube8m/). 
+## Mr. Sum
 
+Mr. Sum is a large-scale video summarization dataset, which contains 31,892 videos selected from YouTube-8M dataset and reliable frame importance score labels aggregated from 50,000+ users per video.  
+
+## YouTube's Most replayed statistic
 Mr.Sum uses 'Most replayed' statistics on YouTube as a importance score labels.
 <img src="images/most_replayed.jpeg" alt="Example of Most replayed" width="300" height="200">
 
@@ -23,7 +26,7 @@ These are some few examples.
 ## Getting Started
 
 1. Install [YouTube-8M](https://research.google.com/youtube8m/) dataset.
-2. Download [mrsum.h5](https://drive.google.com/file/d/1N_W1Z0MiN2sra2P9zhh7ZFgzN1OpHNVL/view?usp=sharing) and place it inside `dataset` folder
+2. Download [mrsum.h5](https://drive.google.com/file/d/1N_W1Z0MiN2sra2P9zhh7ZFgzN1OpHNVL/view?usp=sharing) and place it under `dataset` folder
 3. Install software packages using
 ```
 pip -r requirments.txt ??
@@ -31,28 +34,18 @@ pip -r requirments.txt ??
 4. Now you are ready!
 
 ----
-## Prepare Mr.Sum dataset
-
-### Most replayed crawler
-
-From the meta data, especially with YouTube video id, you can crawl 'Most replayed' statistics.
-
-```
-python crawler/crawler.py --vid <video_id>
-```
-
-### Complete Mr.Sum Dataset
+## Complete Mr.Sum Dataset
 
 You need four fields on your h5 dataset to prepare the dataset.
 
 1. `features`: Video frame features from YouTube-8M dataset.
 2. `gtscore`: Most replayed statistics in normalized 0 to 1 score.
 3. `change_points`: Shot boundary information obtained with [Kernel Temporal Segmentation](https://github.com/TatsuyaShirakawa/KTS) algorithm.
-4. `gtsummary`: Ground truth summary obtained from applying 0/1 knapsack algorithm on shots.
+4. `gtsummary`: Ground truth summary obtained from by solving 0/1 knapsack algorithm on shots.
 
 We already provide three fields: `gtscore`, `change_points`, and `gtsummary` inside `mrsum.h5`. 
 
-You can add `features` field using
+After downloading YouTube-8M dataset, you can add `features` field using
 ```
 python preprocess/preprocess.py
 ```

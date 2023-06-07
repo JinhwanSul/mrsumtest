@@ -22,7 +22,7 @@ def dequantize(features):
     return features * 4.0 / 255.0 - 2.0
 
 def read_tfrecord(file_name, random_id):
-    yt8m_path = f"/dataset/yt8m/frame/{file_name}.tfrecord"
+    yt8m_path = f"/data/dataset/yt8m/frame/{file_name}.tfrecord"
     dataset = tf.data.TFRecordDataset(yt8m_path)
     parsed_dataset = dataset.map(parse_sequence_example)
     for example in parsed_dataset:

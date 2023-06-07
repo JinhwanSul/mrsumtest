@@ -9,7 +9,7 @@ import json
 import h5py
 from sklearn.metrics import average_precision_score
 
-from networks.pglsum import PGL_SUM
+# from networks.pglsum import PGL_SUM
 from networks.mlp import SimpleMLP
 from utils.evaluation_metrics import evaluate_summary
 from utils.generate_summary import generate_summary
@@ -35,7 +35,7 @@ class Solver(object):
         """ Function for constructing the PGL-SUM model of its key modules and parameters."""
         # Model creation
         if self.config.model == 'MLP':
-            self.model = SimpleMLP()
+            self.model = SimpleMLP(1024, [1024], 1)
         # elif self.config.model == 'PGL-SUM':
         #     self.model = PGL_SUM(input_size=self.config.input_size,
         #                         output_size=self.config.output_size,

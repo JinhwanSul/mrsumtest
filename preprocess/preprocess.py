@@ -5,6 +5,7 @@ import h5py
 import numpy as np
 import pandas as pd
 
+from tqdm import tqdm
 from yt8m_reader import read_tfrecord
 
 def align_most_replayed(file_name, random_id, youtube_id, duration):
@@ -24,11 +25,11 @@ def align_most_replayed(file_name, random_id, youtube_id, duration):
     return np.array(aligned)
 
 def preprocess():
-    meta_data = "../dataset/meta_data.csv"
-    h5fd = h5py.File("mrsum.h5", 'a+')
+    meta_data = "dataset/meta_data.csv"
+    h5fd = h5py.File("dataset/mrsum.h5", 'a')
     df = pd.read_csv(meta_data)
     
-    for row in df.itertuples():
+    for row in tqdm(df.itertuples()):
         feature, labels = read_tfrecord(row.yt8m_file, row.random_id)
         h5fd.create_dataset(f"{row.video_id}/features", data=feature)
         
@@ -36,3 +37,6 @@ def preprocess():
         # h5fd.create_dataset(f"{row.video_id}/gtscore", data=mostreplayed)
     
     h5fd.close()
+
+if __name__ == "__main__":
+    preprocess()

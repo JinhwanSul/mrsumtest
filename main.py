@@ -6,8 +6,6 @@ from model.configs import Config
 from torch.utils.data import DataLoader
 from model.mrsum_dataset import MrSumDataset, BatchCollator
 from model.solver import Solver
-from data_loader import get_loader
-
 
 if __name__ == '__main__':
 

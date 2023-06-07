@@ -5,7 +5,6 @@ from bs4 import BeautifulSoup
 import re
 import json
 
-
 def getMostReplayed(youtube_id):
     most_replayed = {}
     url = f'https://www.youtube.com/watch?v={youtube_id}'
