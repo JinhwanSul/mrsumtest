@@ -19,25 +19,9 @@ These are some few examples of Most replayed.
 3. We provide sample codes to apply Mr.Sum dataset on a video summarization model. -->
 
 
-<div style="display:flex;">
-  <div style="width:40%;">
-    <img src="images/most_replayed.jpeg" width="100">
-  </div>
-  <div style="width:60%; display:flex; justify-content:flex-end;">
-    <table style="width:40%;">
-      <tr>
-        <td><img src="images/AC_sparta_1_gif.gif" width="100"></td>
-        <td><img src="images/AC_sparta_2_gif.gif" width="100"></td>
-      </tr>
-      <tr>
-        <td><img src="images/AC_sparta_3_gif.gif" width="100"></td>
-        <td><img src="images/AC_sparta_4_gif.gif" width="100"></td>
-      </tr>
-    </table>
-  </div>
-</div>
-
-
+<p align="center">
+  <img src="images/most_replayed.jpeg" width="100">
+</p>
 
 
 
