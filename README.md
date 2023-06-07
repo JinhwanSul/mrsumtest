@@ -17,29 +17,36 @@ They are aggregated statistics from more than 50,000 watchers which makes this l
 
 ----
 
-## Mr.Sum dataset
+## How to create & use Mr.Sum dataset
 
-
-
-## Most replayed crawler
-
-Mr.Sum can grow bigger with more CC-BY videos on YouTube.
+### Most replayed crawler
 
 From the meta data, especially with YouTube video id, you can crawl 'Most replayed' statistics.
 
 ```
-python crawler.py --vid <video_id>
+python crawler/crawler.py --vid <video_id>
 ```
 
-## Preparing Mr.Sum Dataset
+### Preparing Mr.Sum Dataset
 
-We provide data loader which takes h5 datasets inputs
+You need four fields on your h5 dataset to prepare the dataset.
+
+1. `features`: Video frame feature you can obtain from YouTube-8M dataset.
+2. `gtscore`: Most replayed statistics in normalized 0 to 1 score.
+3. `change_points`: Shot boundary information obtained with [Kernel Temporal Segmentation](https://github.com/TatsuyaShirakawa/KTS) algorithm.
+4. `gtsummary`: Ground truth summary obtained from applying 0/1 knapsack algorithm on shots.
+
+We already provide three fields: `gtscore`,`change_points`, and `gtsummary` inside [mrsum.h5](dataset/mrsum.h5-fake). 
+
+You can add `features` field using
+```
+python preprocess/preprocess.py
+```
 
 
+### Apply Mr.Sum on your summarization model
 
-1. given csv meta data --> youtube video id 를 가져옵니다.
-
-2. video_id 로 most replayed 를 crawl합니다.
+We provide sample code for training and evaluating a summarization model.
 
 3. h5 만드는 코드
 - video feature --> h5
@@ -52,3 +59,5 @@ We provide data loader which takes h5 datasets inputs
 - evaluate
 
 5. 결과
+
+## Mr.Sum dataset framework

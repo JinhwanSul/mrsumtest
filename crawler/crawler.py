@@ -5,8 +5,6 @@ from bs4 import BeautifulSoup
 import re
 import json
 
-# Goal
-
 
 def getMostReplayed(youtube_id):
     most_replayed = {}
