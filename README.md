@@ -35,10 +35,10 @@ These are some few examples of Most replayed.
     <th>4th Most Replayed</th>
   </tr>
   <tr>
-    <td><img src="images/AC_sparta_1_gif.gif" width="200"></td>
-    <td><img src="images/AC_sparta_2_gif.gif" width="200"></td>
-    <td><img src="images/AC_sparta_3_gif.gif" width="200"></td>
-    <td><img src="images/AC_sparta_4_gif.gif" width="200"></td>
+    <td><img src="images/AC_sparta_1_gif.gif" width="25%"></td>
+    <td><img src="images/AC_sparta_2_gif.gif" width="25%"></td>
+    <td><img src="images/AC_sparta_3_gif.gif" width="25%"></td>
+    <td><img src="images/AC_sparta_4_gif.gif" width="25%"></td>
   </tr>
 </table>
 
