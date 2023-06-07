@@ -2,69 +2,13 @@
 
 Mr. Sum is a large-scale video summarization dataset, which contains 31,892 videos selected from YouTube-8M dataset and reliable frame importance score labels aggregated from 50,000+ users per video.  
 
-## YouTube's Most replayed statistic
+## YouTube's Most replayed statistics
 Mr.Sum uses 'Most replayed' statistics on YouTube as a importance score labels.
 
 <!-- <img src="images/most_replayed.jpeg" alt="Example of Most replayed" width="300" height="200"> -->
 
 These are some few examples of Most replayed.
 <!-- <img src="images/AC_sparta_all_gif_resized.gif" alt="Example of Soccer game Most replayed" width="200" height="250"> -->
-
-
-<!-- <div>
-  <table>
-    <tr>
-      <img src="images/most_replayed.jpeg" alt="Image" style="float:left; margin-right: 0px;" width="300" height="200"/>  
-    </tr>
-    <tr>
-      <td>
-        <img src="images/AC_sparta_1_gif.gif" alt="GIF 1", width="150" height="100"/>
-      </td>
-      <td>
-        <img src="images/AC_sparta_2_gif.gif" alt="GIF 2", width="150" height="100"/>
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <img src="images/AC_sparta_3_gif.gif" alt="GIF 3", width="150" height="100" />
-      </td>
-      <td>
-        <img src="images/AC_sparta_4_gif.gif" alt="GIF 4", width="150" height="100" />
-      </td>
-    </tr>
-  </table>
-</div> -->
-
-<div style="display: flex;">
-  <table style="width: 25%;">
-    <tr>
-      <td>
-        <img src="images/most_replayed.jpeg" alt="Image" style="width: 100%;" />
-      </td>
-    </tr>
-  </table>
-
-  <table style="width: 75%;">
-    <tr>
-      <td>
-        <img src="images/AC_sparta_1_gif.gif" alt="GIF 1" style="width: 50%;" />
-      </td>
-      <td>
-        <img src="images/AC_sparta_2_gif.gif" alt="GIF 2" style="width: 50%;" />
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <img src="images/AC_sparta_3_gif.gif" alt="GIF 3" style="width: 50%;" />
-      </td>
-      <td>
-        <img src="images/AC_sparta_4_gif.gif" alt="GIF 4" style="width: 50%;" />
-      </td>
-    </tr>
-  </table>
-</div>
-
-
 
 <!-- **In this repository,**
 
@@ -76,6 +20,7 @@ These are some few examples of Most replayed.
 
 
 
+### Update
 - **2023.06.07**, Repository created.
 
 
@@ -93,10 +38,6 @@ These are some few examples of Most replayed.
 4. Now you are ready!
 
 ----
-
-
-
-----
 ## Complete Mr.Sum Dataset
 
 You need four fields on your `mrsum.h5` to prepare.
@@ -112,6 +53,9 @@ After downloading YouTube-8M dataset, you can add `features` field using
 ```
 python preprocess/preprocess.py
 ```
+
+Please read [DATASET.md](dataset/DATASET.md) for more details about the Mr.Sum.
+
 ----
 ## Apply Mr.Sum on your summarization model
 

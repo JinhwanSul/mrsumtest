@@ -1,4 +1,4 @@
-## Mr.Sum Dataset Explanation
+## Mr.Sum Dataset Details
 ------
 ### Metadata of Mr.Sum
 
@@ -21,14 +21,15 @@
 
 ----
 
-----
-
 ### Most replayed crawler
 
-From the meta data, especially with YouTube video id, you can crawl 'Most replayed' statistics.
+From the metadata, especially with YouTube video id, you can crawl 'Most replayed' statistics.
 
 ```
-python crawler.py --vid <video_id>
+python dataset/crawler.py --vid <video_id>
 ```
-
+For example,
+```
+python dataset/crawler.py --vid JhdjUam0l6A
+```
 ----

@@ -1,9 +1,8 @@
-import csv
-import pandas as pd
 import requests
 from bs4 import BeautifulSoup
 import re
 import json
+import argparse
 
 def getMostReplayed(youtube_id):
     most_replayed = {}
@@ -24,12 +23,12 @@ def getMostReplayed(youtube_id):
     return None
 
 if __name__ == "__main__":
-    # df = pd.read_csv('dataset/filtered_with_headers.csv')
-    # youtube_id_list = df['youtube_id'].tolist()
-    # id = youtube_id_list[0]
-    id = '6f6y1keRAS8'
-    print(id)
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--vid", help='youtube video id')
+    args = parser.parse_args()
+
+    id = args.vid
     most_replayed_statistics = getMostReplayed(id)
-    with open("most_replayed.json", "w") as outfile:
+    with open("dataset/most_replayed.json", "w") as outfile:
         json.dump(most_replayed_statistics, outfile)
 
