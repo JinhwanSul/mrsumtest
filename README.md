@@ -30,7 +30,7 @@ Mr.Sum uses 'Most replayed' statistics on YouTube as a importance score labels.
 | --- | --- | --- | --- |
 | ![gif1](images/AC_sparta_1_gif.gif) | ![gif2](images/AC_sparta_2_gif.gif) | ![gif3](images/AC_sparta_3_gif.gif) | ![gif4](images/AC_sparta_4_gif.gif) |
 
-The four most viewed scenes in the "AC Sparta Praha" video all show players scoring goals. 
+The four most viewed scenes in the "AC Sparta Praha" video ([Link](https://youtu.be/hqm6r8xeAew)) all show players scoring goals. 
 
 ### Example 2: Best bicyle kick goals in Peru
 
@@ -42,7 +42,7 @@ The four most viewed scenes in the "AC Sparta Praha" video all show players scor
 | --- | --- | --- | --- |
 | ![gif1](images/mejores_1_gif.gif) | ![gif2](images/mejores_2_gif.gif) | ![gif3](images/mejores_3_gif.gif) | ![gif4](images/mejores_4_gif.gif) |
 
-The four most viewed scenes in the above video all show players scoring goals with amazing bicycle kicks. 
+The four most viewed scenes in the above video all show players scoring goals with amazing bicycle kicks.([Link](https://youtu.be/q89vpZ1kwpM))
 
 ### Example 3: Neo - 'The One' | The Matrix
 
@@ -54,7 +54,7 @@ The four most viewed scenes in the above video all show players scoring goals wi
 | --- | --- | --- |
 | ![gif1](images/the_matrix_1_gif.gif) | ![gif2](images/the_matrix_2_gif.gif) | ![gif3](images/the_matrix_3_gif.gif) |
 
-The first most viewed scene, noted as 1 in the video, as soon as Neo meets Agent Smith, he is immediately shot by the gun. The second most viewed scene, noted as 2, plenty of Agent Smiths shoots Neo and Neo reaches out his hand to block the bullets. Lastly, in the most viewed scene 3, Neo engages in combat with Agent Smith.
+The first most viewed scene, noted as 1 in the video, as soon as Neo meets Agent Smith, he is immediately shot by the gun. The second most viewed scene, noted as 2, plenty of Agent Smiths shoots Neo and Neo reaches out his hand to block the bullets. Lastly, in the most viewed scene 3, Neo engages in combat with Agent Smith. ([Link](https://www.youtube.com/watch?v=H-0RHqDWcJE))
 
 ### Update
 - **2023.06.07**, Repository created.
