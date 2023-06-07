@@ -11,10 +11,10 @@ These are some few examples of Most replayed.
 <!-- <img src="images/AC_sparta_all_gif_resized.gif" alt="Example of Soccer game Most replayed" width="200" height="250"> -->
 
 
-<div>
+<!-- <div>
   <table>
     <tr>
-      <img src="images/most_replayed.jpeg" alt="Image" style="float: left; margin-right: 1px;" width="300" height="200"/>  
+      <img src="images/most_replayed.jpeg" alt="Image" style="float:left; margin-right: 0px;" width="300" height="200"/>  
     </tr>
     <tr>
       <td>
@@ -33,9 +33,37 @@ These are some few examples of Most replayed.
       </td>
     </tr>
   </table>
+</div> -->
+
+<div style="display: flex;">
+  <table style="width: 25%;">
+    <tr>
+      <td>
+        <img src="images/most_replayed.jpeg" alt="Image" style="width: 100%;" />
+      </td>
+    </tr>
+  </table>
+
+  <table style="width: 75%;">
+    <tr>
+      <td>
+        <img src="images/AC_sparta_1_gif.gif" alt="GIF 1" style="width: 50%;" />
+      </td>
+      <td>
+        <img src="images/AC_sparta_2_gif.gif" alt="GIF 2" style="width: 50%;" />
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <img src="images/AC_sparta_3_gif.gif" alt="GIF 3" style="width: 50%;" />
+      </td>
+      <td>
+        <img src="images/AC_sparta_4_gif.gif" alt="GIF 4" style="width: 50%;" />
+      </td>
+    </tr>
+  </table>
 </div>
 
-\
 
 
 <!-- **In this repository,**

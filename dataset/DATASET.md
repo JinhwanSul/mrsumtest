@@ -7,7 +7,7 @@
 | video_id | yt8m_file | random_id | youtube_id   | duration | views  | labels         |
 |----------|-----------|-----------|--------------|----------|--------|----------------|
 | video_1  | train0026 | ORaA      | JhdjUam0l6A  | 258      | 84554  | [8]            |
-| video_2  | train0026 | IwaA      | wq7rSbQx2G8  | 137      | 170768 | [11...]            |
+| video_2  | train0026 | IwaA      | wq7rSbQx2G8  | 137      | 170768 | [11...]        |
 | ...      | ...       | ...       | ...          | ...      | ...    | ...            |
 | video_31892  | train3017 | ShWP | ynmR_tomXP8 | 142 | 59651 | [5..] |
 
