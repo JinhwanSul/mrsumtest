@@ -7,6 +7,10 @@ Mr.Sum uses 'Most replayed' statistics on YouTube as a importance score labels.
 
 They are aggregated statistics from more than 50,000 watchers which makes this labeling reliable.
 
+These are some few examples.
+<img src="images/AC_sparta_all_gif_resized.gif" alt="Example of Soccer game Most replayed" width="300" height="200">
+
+
 **In this repository,**
 
 1. We provide meta data and most replayed labels for 31,892 videos in [dataset](dataset) folder.
