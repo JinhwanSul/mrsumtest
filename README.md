@@ -18,6 +18,14 @@ These are some few examples of Most replayed.
 
 3. We provide sample codes to apply Mr.Sum dataset on a video summarization model. -->
 
+<img src="images/most_replayed.jpeg" alt="Sample video" align="right" width="200"/>
+
+<div style="text-align:right">
+| Column 1 | Column 2 |
+| --- | --- |
+| ![gif1]("images/AC_sparta_1_gif.gif") | ![gif2]("images/AC_sparta_2_gif.gif") |
+| ![gif3]("images/AC_sparta_3_gif.gif") | ![gif4]("images/AC_sparta_4_gif.gif") |
+</div>
 
 
 ### Update
