@@ -20,7 +20,7 @@ These are some few examples of Most replayed.
 
 
 <p align="center">
-  <img src="images/most_replayed.jpeg" width="100">
+  <img src="images/most_replayed.jpeg" width="60%">
 </p>
 
 
