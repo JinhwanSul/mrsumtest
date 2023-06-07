@@ -19,7 +19,7 @@ They are aggregated statistics from more than 50,000 watchers which makes this l
 ## Getting Started
 
 1. Install [YouTube-8M](https://research.google.com/youtube8m/) dataset.
-2. Download [Mr.Sum](https://drive.google.com/file/d/1G1nf1q0fFQ1DyaJOOD3BMXxYk8vEb4_F/view?usp=sharing) and place it inside `dataset` folder
+2. Download [mrsum.h5](https://drive.google.com/file/d/1N_W1Z0MiN2sra2P9zhh7ZFgzN1OpHNVL/view?usp=sharing) and place it inside `dataset` folder
 3. Install software packages using
 ```
 pip -r requirments.txt ??
@@ -46,7 +46,7 @@ You need four fields on your h5 dataset to prepare the dataset.
 3. `change_points`: Shot boundary information obtained with [Kernel Temporal Segmentation](https://github.com/TatsuyaShirakawa/KTS) algorithm.
 4. `gtsummary`: Ground truth summary obtained from applying 0/1 knapsack algorithm on shots.
 
-We already provide three fields: `gtscore`, `change_points`, and `gtsummary` inside [mrsum.h5](dataset/mrsum.h5). 
+We already provide three fields: `gtscore`, `change_points`, and `gtsummary` inside `mrsum.h5`. 
 
 You can add `features` field using
 ```
