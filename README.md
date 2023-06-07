@@ -28,40 +28,6 @@ These are some few examples of Most replayed.
 | ![gif1](images/AC_sparta_1_gif.gif) | ![gif2](images/AC_sparta_2_gif.gif) | ![gif3](images/AC_sparta_3_gif.gif) | ![gif4](images/AC_sparta_4_gif.gif) |
 
 
-<style>
-  table {
-    border-collapse: collapse;
-    width: 100%;
-  }
-
-  th, td {
-    text-align: left;
-    padding: 8px;
-  }
-
-  td img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  }
-</style>
-
-<table style="width:100%">
-  <tr>
-    <th>1st Most Replayed</th>
-    <th>2nd Most Replayed</th>
-    <th>3rd Most Replayed</th>
-    <th>4th Most Replayed</th>
-  </tr>
-  <tr>
-    <td><img src="images/AC_sparta_1_gif.gif" width="230"></td>
-    <td><img src="images/AC_sparta_2_gif.gif" width="230"></td>
-    <td><img src="images/AC_sparta_3_gif.gif" width="230"></td>
-    <td><img src="images/AC_sparta_4_gif.gif" width="230"></td>
-  </tr>
-</table>
-
-
 ### Update
 - **2023.06.07**, Repository created.
 
