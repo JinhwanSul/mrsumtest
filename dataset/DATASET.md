@@ -16,14 +16,14 @@
 - `random_id` is a unique id used in the YouTube-8M dataset.
 - `youtube_id` is a unique video id used in [youtube.com](youtube.com).
 - `duration` is a length of the video in seconds.
-- `views` is a view count of the video. Every video has at least 50,000 views.
+- `views` is the view counts of the video. Every video has at least 50,000 views.
 - `labels` is a list of class labels from YouTube-8M. You can check the name of each label from [YouTube-8M](https://research.google.com/youtube8m/) webpage 'Dataset Vocabulary' part.
 
 ----
 
 ### Most replayed crawler
 
-From the metadata, especially with YouTube video id, you can crawl 'Most replayed' statistics.
+Utilizing the YouTube video id, you can crawl 'Most replayed' statistics using our crawler.
 
 ```
 python dataset/crawler.py --vid <video_id>
