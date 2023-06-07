@@ -42,7 +42,9 @@ def evaluate_summary(predicted_summary, user_summary, eval_method):
         f_score_result = sum(f_scores)/len(f_scores)
     
     y_pred2=predicted_summary
+    print(y_pred2.shape)
     y_true2=user_summary.mean(axis=0)
+    print(y_true2.shape)
     pS=stats.spearmanr(y_pred2,y_true2)[0]
     kT=stats.kendalltau(stats.rankdata(-np.array(y_true2)), stats.rankdata(-np.array(y_pred2)))[0]
     

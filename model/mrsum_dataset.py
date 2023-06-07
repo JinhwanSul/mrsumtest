@@ -10,7 +10,7 @@ class MrSumDataset(Dataset):
     def __init__(self, mode):
         self.mode = mode
         self.dataset = 'dataset/mrsum.h5'
-        self.split_file = 'datasets/mrsum_split.json'
+        self.split_file = 'dataset/mrsum_split.json'
         
         self.video_data = h5py.File(self.dataset, 'r')
 
@@ -19,7 +19,7 @@ class MrSumDataset(Dataset):
 
     def __len__(self):
         """ Function to be called for the `len` operator of `VideoData` Dataset. """
-        self.len = len(self.split[self.mode+'_keys'])
+        self.len = len(self.data[self.mode+'_keys'])
         return self.len
 
     def __getitem__(self, index):
@@ -29,17 +29,17 @@ class MrSumDataset(Dataset):
 
         :param int index: The above-mentioned id of the data.
         """
-        video_name = self.split[self.mode + '_keys'][index]
+        video_name = self.data[self.mode + '_keys'][index]
         d = {}
         d['video_name'] = video_name
         d['features'] = torch.Tensor(np.array(self.video_data[video_name + '/features']))
         d['gtscore'] = torch.Tensor(np.array(self.video_data[video_name + '/gtscore']))
 
-        if self.mode is not 'train':
+        if self.mode != 'train':
             n_frames = d['features'].shape[0]
             cps = np.array(self.video_data[video_name + '/change_points'])
             d['n_frames'] = np.array(n_frames)
-            d['picks'] = torch.Tensor(np.array([i for i in range(n_frames)]))
+            d['picks'] = np.array([i for i in range(n_frames)])
             d['change_points'] = cps
             d['n_frame_per_seg'] = np.array([cp[1]-cp[0] for cp in cps])
             d['gt_summary'] = np.expand_dims(np.array(self.video_data[video_name + '/gt_summary']), axis=0)

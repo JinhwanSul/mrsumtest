@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 import numpy as np
 #from knapsack import knapsack_ortools
-from knapsack_implementation import knapSack
+from model.utils.knapsack_implementation import knapSack
 import math
 # from knapsack_implementation import knapSack
 
@@ -17,6 +17,7 @@ def generate_summary(ypred, cps, n_frames, nfps, positions, proportion=0.15, met
     - proportion: length of video summary (compared to original video length).
     - method: defines how shots are selected, ['knapsack', 'rank'].
     """
+
     n_segs = len(cps)
     n_frames = n_frames[0]
     frame_scores = np.zeros((n_frames), dtype=np.float32)

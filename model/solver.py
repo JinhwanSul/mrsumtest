@@ -3,17 +3,15 @@ import torch
 import torch.nn as nn
 import torch.optim as optim
 import numpy as np
-import os, sys
-import random
-import json
-import h5py
+import os
+from tqdm import tqdm
 from sklearn.metrics import average_precision_score
 
-# from networks.pglsum import PGL_SUM
-from networks.mlp import SimpleMLP
-from utils.evaluation_metrics import evaluate_summary
-from utils.generate_summary import generate_summary
-from utils.evaluate_map import generate_mrsum_seg_scores, top50_summary, top15_summary
+# from model.networks.pglsum import PGL_SUM
+from model.networks.mlp import SimpleMLP
+from model.utils.evaluation_metrics import evaluate_summary
+from model.utils.generate_summary import generate_summary
+from model.utils.evaluate_map import generate_mrsum_seg_scores, top50_summary, top15_summary
 
 
 class Solver(object):
@@ -48,6 +46,8 @@ class Solver(object):
         # elif self.config.model == 'SL-module':
             # self.model = SL-Module()
             
+        self.model.to(self.config.device)
+        
         self.optimizer = optim.Adam(self.model.parameters(), lr=self.config.lr, weight_decay=self.config.l2_reg)
 
     def train(self):
@@ -59,7 +59,6 @@ class Solver(object):
         best_map50_epoch = 0
         best_map15_epoch = 0
         
-        best_ckpt_path = None
         for epoch_i in range(self.config.epochs):
             print("[Epoch: {0:6}]".format(str(epoch_i)+"/"+str(self.config.epochs)))
             self.model.train()
@@ -68,7 +67,7 @@ class Solver(object):
             num_batches = int(len(self.train_loader))
             iterator = iter(self.train_loader)
 
-            for _ in range(num_batches):
+            for _ in tqdm(range(num_batches)):
 
                 self.optimizer.zero_grad()
                 data = next(iterator)
@@ -114,7 +113,6 @@ class Solver(object):
         print('   Best Val MAP-50   {0:0.5} @ epoch{1}'.format(best_map50, best_map50_epoch))
         print('   Best Val MAP-15   {0:0.5} @ epoch{1}'.format(best_map15, best_map15_epoch))
 
-
         f = open(os.path.join(self.save_dir_root, 'results.txt'), 'a')
         f.write('   Best Val F1 score {0:0.5} @ epoch{1}\n'.format(best_f1score, best_f1score_epoch))
         f.write('   Best Val MAP-50   {0:0.5} @ epoch{1}\n'.format(best_map50, best_map50_epoch))
@@ -157,13 +155,15 @@ class Solver(object):
             # Summarization metric
             score = score.squeeze().cpu()
             gt_summary = data['gt_summary'][0]
+            print("[DEBUG] gt_summary.shape:", gt_summary.shape)
             cps = data['change_points'][0]
             n_frames = data['n_frames']
+            print("debug, n_frames, cps", n_frames, cps)
             nfps = data['n_frame_per_seg'][0].tolist()
-            picks = data['picks'][0]
+            picks = data['picks'][0].numpy()
             
             machine_summary = generate_summary(score, cps, n_frames, nfps, picks)
-            f_score = evaluate_summary(machine_summary, gt_summary, eval_metric='avg')
+            f_score = evaluate_summary(machine_summary, gt_summary, eval_method='avg')
             
             fscore_history.append(f_score)
 
@@ -190,8 +190,8 @@ class Solver(object):
 
     def test(self, ckpt_path):
         if ckpt_path != None:
-            print("Testing Model ", ckpt_path)
-            print(self.config.device)
+            print("Testing Model: ", ckpt_path)
+            print("Device: ",  self.config.device)
             self.model.load_state_dict(torch.load(ckpt_path))
         
         test_fscore, test_map50, test_map15 = self.evaluate(dataloader=self.test_loader)
@@ -200,13 +200,13 @@ class Solver(object):
         print(f"   TEST RESULT on {ckpt_path}: ")
         print('   TEST MRSum F-score {0:0.5} | MAP50 {1:0.5} | MAP15 {2:0.5}'.format(test_fscore, test_map50, test_map15))
         print("------------------------------------------------------")
+        
         f = open(str(self.config.root_dir) + '/results.txt', 'a+')
         f.write("Testing on Model " + ckpt_path + '\n')
         f.write('Test F-score ' + str(test_fscore) + '\n')
         f.write('Test MAP50   ' + str(test_map50) + '\n')
         f.write('Test MAP15   ' + str(test_map15) + '\n\n')
         f.flush()
-
 
 if __name__ == '__main__':
     pass

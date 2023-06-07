@@ -21,7 +21,7 @@ class SimpleMLP(nn.Module):
 
         self.initialize_weights()
 
-    def forward(self, x):
+    def forward(self, x, mask):
 
         x = torch.relu(self.input(x))
 
@@ -30,8 +30,8 @@ class SimpleMLP(nn.Module):
             x = torch.relu(layer(x))
         x = self.out(x)
         output = self.sigmoid(x)
-
-        return output
+        output = output.squeeze(-1)
+        return output, mask
 
     def initialize_weights(self):
         for m in self.modules():

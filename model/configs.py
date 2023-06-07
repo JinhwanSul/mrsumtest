@@ -36,7 +36,7 @@ class Config(object):
         f.flush()
         f.close()
 
-    def set_dataset_dir(self, video_type):
+    def set_dataset_dir(self):
         """ Function that sets as class attributes the necessary directories for logging important training information.
         """
 
