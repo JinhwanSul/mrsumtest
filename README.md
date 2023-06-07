@@ -29,12 +29,12 @@ These are some few examples of Most replayed.
                 <td>Column 2</td>
             </tr>
             <tr>
-                <td><img src="images/AC_sparta_1_gif.gif" alt="gif1" width="40%"/></td>
-                <td><img src="images/AC_sparta_2_gif.gif" alt="gif2" width="40%"/></td>
+                <td><img src="images/AC_sparta_1_gif.gif" alt="gif1" width="100%"/></td>
+                <td><img src="images/AC_sparta_2_gif.gif" alt="gif2" width="100%"/></td>
             </tr>
             <tr>
-                <td><img src="images/AC_sparta_3_gif.gif" alt="gif3" width="40%"/></td>
-                <td><img src="images/AC_sparta_4_gif.gif" alt="gif4" width="40%"/></td>
+                <td><img src="images/AC_sparta_3_gif.gif" alt="gif3" width="100%"/></td>
+                <td><img src="images/AC_sparta_4_gif.gif" alt="gif4" width="100%"/></td>
             </tr>
         </table>
     </div>
