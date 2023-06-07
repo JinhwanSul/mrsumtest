@@ -11,9 +11,9 @@
 | ...      | ...       | ...       | ...          | ...      | ...    | ...            |
 | video_31892  | train3017 | ShWP | ynmR_tomXP8 | 142 | 59651 | [5..] |
 
-- `video_id` is unque index of the video used in this dataset.
+- `video_id` is a unque index of the video used in this dataset.
 - `yt8m_file` is a YouTube-8M tfrecord file where the video belongs to.
-- `random_id` is a unique id used in YouTube-8M dataset.
+- `random_id` is a unique id used in the YouTube-8M dataset.
 - `youtube_id` is a unique video id used in [youtube.com](youtube.com).
 - `duration` is a length of the video in seconds.
 - `views` is a view count of the video. Every video has at least 50,000 views.
