@@ -7,7 +7,7 @@ Mr.Sum uses 'Most replayed' statistics on YouTube as a importance score labels.
 
 <!-- <img src="images/most_replayed.jpeg" alt="Example of Most replayed" width="300" height="200"> -->
 
-These are some few examples of Most replayed.
+
 <!-- <img src="images/AC_sparta_all_gif_resized.gif" alt="Example of Soccer game Most replayed" width="200" height="250"> -->
 
 <!-- **In this repository,**
@@ -18,22 +18,31 @@ These are some few examples of Most replayed.
 
 3. We provide sample codes to apply Mr.Sum dataset on a video summarization model. -->
 
+## Most Replayed statistics Exhibition
+
+### Example 1: AC Sparta Praha - Top 10 goals, season 2013/2014
 
 <p align="center">
-  <img src="images/AC_sparta_most_replayed_with_numbers.png" width="60%">
+  <img src="images/AC_sparta_most_replayed_with_numbers.png" width="50%">
 </p>
 
 | **<span style="color:yellow">1</span>** | **<span style="color:yellow">2</span>** | **<span style="color:yellow">3</span>** | **<span style="color:yellow">4</span>** |
 | --- | --- | --- | --- |
 | ![gif1](images/AC_sparta_1_gif.gif) | ![gif2](images/AC_sparta_2_gif.gif) | ![gif3](images/AC_sparta_3_gif.gif) | ![gif4](images/AC_sparta_4_gif.gif) |
 
+The four most viewed scenes in the "AC Sparta Praha" video all show players scoring goals. 
+
+### Example 2: Best bicyle kick goals in Peru
+
 <p align="center">
-  <img src="images/mejores_most_replayed_with_numbers.png" width="60%">
+  <img src="images/mejores_most_replayed_with_numbers.png" width="50%">
 </p>
 
 | **<span style="color:yellow">1</span>** | **<span style="color:yellow">2</span>** | **<span style="color:yellow">3</span>** | **<span style="color:yellow">4</span>** |
 | --- | --- | --- | --- |
 | ![gif1](images/mejores_1_gif.gif) | ![gif2](images/mejores_2_gif.gif) | ![gif3](images/mejores_3_gif.gif) | ![gif4](images/mejores_4_gif.gif) |
+
+The four most viewed scenes in the above video all show players scoring goals with amazing bicycle kicks. 
 
 ### Update
 - **2023.06.07**, Repository created.
