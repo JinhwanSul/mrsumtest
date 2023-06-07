@@ -53,7 +53,7 @@ The four most viewed scenes in the above video all show players scoring goals wi
 
 1. Download [YouTube-8M](https://research.google.com/youtube8m/) dataset.
 
-2. Download [mrsum.h5](https://drive.google.com/file/d/1xWfxTYwftclR5Xhs_ViVqZHLU0nwwbWz/view?usp=sharing) and [metadata.csv](https://drive.google.com/file/d/1GhUSEzPif5h2sUtHsSK9zn4qlEqeKcgY/view?usp=sharing) place it under `dataset` folder.
+2. Download [mrsum.h5](https://drive.google.com/file/d/1LmasS9joHe2VqINO2ZXLFdAE5nPdngyO/view?usp=sharing) and [metadata.csv](https://drive.google.com/file/d/1GhUSEzPif5h2sUtHsSK9zn4qlEqeKcgY/view?usp=sharing) place it under `dataset` folder.
 
 3. Install software packages.
     ```
@@ -83,9 +83,17 @@ Please read [DATASET.md](dataset/DATASET.md) for more details about the Mr.Sum.
 ----
 ## Apply Mr.Sum on your summarization model
 
-We provide sample code for training and evaluating a summarization model on Mr.Sum.
+We provide a sample code for training and evaluating a summarization model on Mr.Sum.
 
-Coming Soon!
+A summarization model developer can test their own model by implementing pytorch model under the `model/networks` folder.
+
+We provide the [`SimpleMLP`](model/networks/mlp.py) summarization model as an example.
+
+You can train your model on Mr.Sum dataset using the command below. Modify the configuration with your taste!
+```
+python main.py --train True --batch_size 8 --epochs 50 --tag exp1
+```
+
 
 ----
 
