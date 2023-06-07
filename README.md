@@ -23,19 +23,17 @@ These are some few examples of Most replayed.
   <img src="images/AC_sparta_most_replayed_with_numbers.png" width="60%">
 </p>
 
-| 1st Most Replayed | 2nd Most Replayed | 3rd Most Replayed | 4th Most Replayed |
+| **<span style="color:yellow">1</span>** | **<span style="color:yellow">2</span>** | **<span style="color:yellow">3</span>** | **<span style="color:yellow">4</span>** |
 | --- | --- | --- | --- |
 | ![gif1](images/AC_sparta_1_gif.gif) | ![gif2](images/AC_sparta_2_gif.gif) | ![gif3](images/AC_sparta_3_gif.gif) | ![gif4](images/AC_sparta_4_gif.gif) |
-| **<span style="color:yellow">1</span>** | **<span style="color:yellow">2</span>** | **<span style="color:yellow">3</span>** | **<span style="color:yellow">4</span>** |
 
 <p align="center">
   <img src="images/mejores_most_replayed_with_numbers.png" width="60%">
 </p>
 
-| 1st Most Replayed | 2nd Most Replayed | 3rd Most Replayed | 4th Most Replayed |
+| **<span style="color:yellow">1</span>** | **<span style="color:yellow">2</span>** | **<span style="color:yellow">3</span>** | **<span style="color:yellow">4</span>** |
 | --- | --- | --- | --- |
 | ![gif1](images/mejores_1_gif.gif) | ![gif2](images/mejores_2_gif.gif) | ![gif3](images/mejores_3_gif.gif) | ![gif4](images/mejores_4_gif.gif) |
-| **<span style="color:yellow">1</span>** | **<span style="color:yellow">2</span>** | **<span style="color:yellow">3</span>** | **<span style="color:yellow">4</span>** |
 
 ### Update
 - **2023.06.07**, Repository created.
