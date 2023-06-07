@@ -10,20 +10,24 @@ def generate_mrsum_seg_scores(cp_frame_scores, uniform_clip=5):
     return segment_scores
 
 def top50_summary(scores):
-    sort_idx = torch.flip(torch.argsort(scores), [0])
+    sort_idx = torch.argsort(scores, descending=True)
     # take the 50% shots
     median_index = len(scores) // 2 
     filtered_sort_idx = sort_idx[:median_index]
     selected_segs = [0] * len(scores)
     for index in filtered_sort_idx:
         selected_segs[index] = 1
+    
     return selected_segs
 
 def top15_summary(scores):
-    sort_idx = torch.flip(torch.argsort(scores), [0])
+    sort_idx = torch.argsort(scores, descending=True)
+
     # take the 15% shots
     filter_index = int(len(scores) * 0.15) 
     filtered_sort_idx = sort_idx[:filter_index]
     selected_segs = [0] * len(scores)
     for index in filtered_sort_idx:
         selected_segs[index] = 1
+    
+    return selected_segs

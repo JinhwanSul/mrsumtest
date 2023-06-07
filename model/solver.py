@@ -7,7 +7,6 @@ import os
 from tqdm import tqdm
 from sklearn.metrics import average_precision_score
 
-# from model.networks.pglsum import PGL_SUM
 from model.networks.mlp import SimpleMLP
 from model.utils.evaluation_metrics import evaluate_summary
 from model.utils.generate_summary import generate_summary
@@ -34,17 +33,6 @@ class Solver(object):
         # Model creation
         if self.config.model == 'MLP':
             self.model = SimpleMLP(1024, [1024], 1)
-        # elif self.config.model == 'PGL-SUM':
-        #     self.model = PGL_SUM(input_size=self.config.input_size,
-        #                         output_size=self.config.output_size,
-        #                         num_segments=self.config.n_segments,
-        #                         heads=self.config.heads,
-        #                         fusion=self.config.fusion,
-        #                         pos_enc=self.config.pos_enc).to(self.config.device)
-        # elif self.config.model == 'VASNet':
-            # self.model = VASNet()
-        # elif self.config.model == 'SL-module':
-            # self.model = SL-Module()
             
         self.model.to(self.config.device)
         
@@ -113,7 +101,7 @@ class Solver(object):
         print('   Best Val MAP-50   {0:0.5} @ epoch{1}'.format(best_map50, best_map50_epoch))
         print('   Best Val MAP-15   {0:0.5} @ epoch{1}'.format(best_map15, best_map15_epoch))
 
-        f = open(os.path.join(self.save_dir_root, 'results.txt'), 'a')
+        f = open(os.path.join(self.config.save_dir_root, 'results.txt'), 'a')
         f.write('   Best Val F1 score {0:0.5} @ epoch{1}\n'.format(best_f1score, best_f1score_epoch))
         f.write('   Best Val MAP-50   {0:0.5} @ epoch{1}\n'.format(best_map50, best_map50_epoch))
         f.write('   Best Val MAP-15   {0:0.5} @ epoch{1}\n\n'.format(best_map15, best_map15_epoch))
@@ -155,10 +143,8 @@ class Solver(object):
             # Summarization metric
             score = score.squeeze().cpu()
             gt_summary = data['gt_summary'][0]
-            print("[DEBUG] gt_summary.shape:", gt_summary.shape)
             cps = data['change_points'][0]
             n_frames = data['n_frames']
-            print("debug, n_frames, cps", n_frames, cps)
             nfps = data['n_frame_per_seg'][0].tolist()
             picks = data['picks'][0].numpy()
             
@@ -168,12 +154,12 @@ class Solver(object):
             fscore_history.append(f_score)
 
             # Highlight Detection Metric
-            gt_seg_score = generate_mrsum_seg_scores(gtscore, uniform_clip=5)
+            gt_seg_score = generate_mrsum_seg_scores(gtscore.squeeze(0), uniform_clip=5)
             gt_top50_summary = top50_summary(gt_seg_score)
             gt_top15_summary = top15_summary(gt_seg_score)
             
             highlight_seg_machine_score = generate_mrsum_seg_scores(score, uniform_clip=5)
-            highlight_seg_machine_score = torch.exp(highlight_seg_machine_score) / (torch.exp(highlight_seg_machine_score).sum() + epsilon)
+            highlight_seg_machine_score = torch.exp(highlight_seg_machine_score) / (torch.exp(highlight_seg_machine_score).sum() + 1e-7)
             
             clone_machine_summary = highlight_seg_machine_score.clone().detach().cpu()
             clone_machine_summary = clone_machine_summary.numpy()
@@ -201,7 +187,7 @@ class Solver(object):
         print('   TEST MRSum F-score {0:0.5} | MAP50 {1:0.5} | MAP15 {2:0.5}'.format(test_fscore, test_map50, test_map15))
         print("------------------------------------------------------")
         
-        f = open(str(self.config.root_dir) + '/results.txt', 'a+')
+        f = open(os.path.join(self.config.save_dir_root, 'results.txt'), 'a')
         f.write("Testing on Model " + ckpt_path + '\n')
         f.write('Test F-score ' + str(test_fscore) + '\n')
         f.write('Test MAP50   ' + str(test_map50) + '\n')
