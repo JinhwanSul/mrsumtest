@@ -18,23 +18,24 @@ These are some few examples of Most replayed.
 
 3. We provide sample codes to apply Mr.Sum dataset on a video summarization model. -->
 
+
 <div style="display:flex;">
     <div style="flex:1;padding-right:10px;">
-        <img src="images/most_replayed.jpeg" alt="Sample video" width="40%"/>
+        <img src="images/most_replayed.jpeg" alt="Sample video" width="50%"/>
     </div>
     <div style="flex:1;padding-left:10px;">
-        <table style="width:40%;table-layout:fixed;">
+        <table style="width:50%;table-layout:fixed;">
+            <colgroup>
+                <col style="width:25%;">
+                <col style="width:25%;">
+            </colgroup>
             <tr>
-                <td>Column 1</td>
-                <td>Column 2</td>
+                <td><img src="images/AC_sparta_1_gif.gif" alt="gif1" width="100%"/></td>
+                <td><img src="images/AC_sparta_2_gif.gif" alt="gif2" width="100%"/></td>
             </tr>
             <tr>
-                <td><img src="images/AC_sparta_1_gif.gif" alt="gif1"/></td>
-                <td><img src="images/AC_sparta_2_gif.gif" alt="gif2"/></td>
-            </tr>
-            <tr>
-                <td><img src="images/AC_sparta_3_gif.gif" alt="gif3"/></td>
-                <td><img src="images/AC_sparta_4_gif.gif" alt="gif4"/></td>
+                <td><img src="images/AC_sparta_3_gif.gif"  alt="gif3" width="100%"/></td>
+                <td><img src="images/AC_sparta_4_gif.gif"  alt="gif4" width="100%"/></td>
             </tr>
         </table>
     </div>
