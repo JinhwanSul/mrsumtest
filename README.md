@@ -37,6 +37,27 @@ These are some few examples of Most replayed.
 </table>
 </p>
 
+<div style="display:flex;">
+  <div style="flex:1;">
+    <p align="left">
+      <img src="images/most_replayed.jpeg" width="100" />
+    </p>
+  </div>
+  <div style="flex:1;">
+    <table>
+      <tr>
+        <td><img src="images/AC_sparta_1_gif.gif" width="100" /></td>
+        <td><img src="images/AC_sparta_2_gif.gif" width="100" /></td>
+      </tr>
+      <tr>
+        <td><img src="images/AC_sparta_3_gif.gif" width="100" /></td>
+        <td><img src="images/AC_sparta_4_gif.gif" width="100" /></td>
+      </tr>
+    </table>
+  </div>
+</div>
+
+
 ### Update
 - **2023.06.07**, Repository created.
 
