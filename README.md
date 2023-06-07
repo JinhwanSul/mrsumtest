@@ -8,32 +8,32 @@ Mr.Sum uses 'Most replayed' statistics on YouTube as a importance score labels.
 <!-- <img src="images/most_replayed.jpeg" alt="Example of Most replayed" width="300" height="200"> -->
 
 These are some few examples of Most replayed.
-<img src="images/AC_sparta_all_gif_resized.gif" alt="Example of Soccer game Most replayed" width="800" height="250">
+<!-- <img src="images/AC_sparta_all_gif_resized.gif" alt="Example of Soccer game Most replayed" width="200" height="250"> -->
 
 
 <div>
-  <img src="images/most_replayed.jpeg" alt="Image" style="float: left; margin-right: 1px;" width="500" height="300"/>
+  <img src="images/most_replayed.jpeg" alt="Image" style="float: left; margin-right: 1px;" width="270" height="180"/>
   <table>
     <tr>
       <td>
-        <img src="images/AC_sparta_1_gif.gif" alt="GIF 1"/>
+        <img src="images/AC_sparta_1_gif.gif" alt="GIF 1", width="120" height="85"/>
       </td>
       <td>
-        <img src="images/AC_sparta_2_gif.gif" alt="GIF 2" />
+        <img src="images/AC_sparta_2_gif.gif" alt="GIF 2", width="120" height="85"/>
       </td>
     </tr>
     <tr>
       <td>
-        <img src="images/AC_sparta_3_gif.gif" alt="GIF 3" />
+        <img src="images/AC_sparta_3_gif.gif" alt="GIF 3", width="120" height="85" />
       </td>
       <td>
-        <img src="images/AC_sparta_4_gif.gif" alt="GIF 4" />
+        <img src="images/AC_sparta_4_gif.gif" alt="GIF 4", width="120" height="85" />
       </td>
     </tr>
   </table>
 </div>
 
-
+\
 
 
 <!-- **In this repository,**
@@ -44,7 +44,7 @@ These are some few examples of Most replayed.
 
 3. We provide sample codes to apply Mr.Sum dataset on a video summarization model. -->
 
-### Update
+
 
 - **2023.06.07**, Repository created.
 
