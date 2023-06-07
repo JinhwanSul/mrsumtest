@@ -20,76 +20,27 @@ These are some few examples of Most replayed.
 
 
 
-<p align="left">
-  <img src="images/most_replayed.jpeg" width="100" />
-</p>
 
-<p align="left">
-<table>
-  <tr>
-    <td><img src="images/AC_sparta_1_gif.gif" width="100" /></td>
-    <td><img src="images/AC_sparta_2_gif.gif" width="100" /></td>
-  </tr>
-  <tr>
-    <td><img src="images/AC_sparta_3_gif.gif" width="100" /></td>
-    <td><img src="images/AC_sparta_4_gif.gif" width="100" /></td>
-  </tr>
-</table>
-</p>
+<img src="images/most_replayed.jpeg" width="40%">
 
 <div style="display:flex;">
-  <div style="flex:1;">
-    <p align="left">
-      <img src="images/most_replayed.jpeg" width="100" />
-    </p>
+  <div style="width:40%;">
+    <img src="image.jpg" width="100%">
   </div>
-  <div style="flex:1;">
-    <table>
+  <div style="width:60%;">
+    <table style="width:100%;">
       <tr>
-        <td><img src="images/AC_sparta_1_gif.gif" width="100" /></td>
-        <td><img src="images/AC_sparta_2_gif.gif" width="100" /></td>
+        <td><img src="images/AC_sparta_1_gif.gif"></td>
+        <td><img src="images/AC_sparta_2_gif.gif"></td>
       </tr>
       <tr>
-        <td><img src="images/AC_sparta_3_gif.gif" width="100" /></td>
-        <td><img src="images/AC_sparta_4_gif.gif" width="100" /></td>
+        <td><img src="images/AC_sparta_3_gif.gif"></td>
+        <td><img src="images/AC_sparta_4_gif.gif"></td>
       </tr>
     </table>
   </div>
 </div>
 
-<div style="display:flex;">
-  <div style="flex:1;">
-    <p align="left">
-      <img src=c width="100" />
-    </p>
-  </div>
-  <div style="flex:1;text-align:right;">
-    <table>
-      <tr>
-        <td><img src="images/AC_sparta_1_gif.gif" width="100" /></td>
-        <td><img src="images/AC_sparta_2_gif.gif" width="100" /></td>
-      </tr>
-      <tr>
-        <td><img src="images/AC_sparta_3_gif.gif" width="100" /></td>
-        <td><img src="images/AC_sparta_4_gif.gif" width="100" /></td>
-      </tr>
-    </table>
-  </div>
-</div>
-
-<div>
-  <img src="images/most_replayed.jpeg" alt="image" style="float:left;width:30%;margin-left:10px;">
-  <table style="float:right;width:60%;">
-    <tr>
-      <td><img src="images/AC_sparta_1_gif.gif" alt="gif1" width="25%"></td>
-      <td><img src="images/AC_sparta_2_gif.gif" alt="gif2" width="25%"></td>
-    </tr>
-    <tr>
-      <td><img src="images/AC_sparta_3_gif.gif" alt="gif3" width="25%"></td>
-      <td><img src="images/AC_sparta_4_gif.gif" alt="gif4" width="25%"></td>
-    </tr>
-  </table>
-</div>
 
 
 
