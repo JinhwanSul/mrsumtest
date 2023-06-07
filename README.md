@@ -67,11 +67,11 @@ The first most viewed scene, noted as 1 in the video, as soon as Neo meets Agent
 
 2. Download [mrsum.h5](https://drive.google.com/file/d/1LmasS9joHe2VqINO2ZXLFdAE5nPdngyO/view?usp=sharing) and [metadata.csv](https://drive.google.com/file/d/1GhUSEzPif5h2sUtHsSK9zn4qlEqeKcgY/view?usp=sharing) place it under `dataset` folder.
 
-3. Install software packages.
+<!-- 3. Install software packages.
     ```
     pip -r requirments.txt ??
     ```
-4. Now you are ready!
+. Now you are ready! -->
 
 ----
 ## Complete Mr.Sum Dataset
@@ -106,6 +106,7 @@ You can train your model on Mr.Sum dataset using the command below. Modify the c
 python main.py --train True --batch_size 8 --epochs 50 --tag exp1
 ```
 
+We referred to the code from [PGL-SUM](https://github.com/e-apostolidis/PGL-SUM).
 
 ----
 
