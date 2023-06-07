@@ -44,6 +44,18 @@ The four most viewed scenes in the "AC Sparta Praha" video all show players scor
 
 The four most viewed scenes in the above video all show players scoring goals with amazing bicycle kicks. 
 
+### Example 3: Neo - 'The One' | The Matrix
+
+<p align="center">
+  <img src="images/the_matrix_most_replayed_with_numbers.png" width="50%">
+</p>
+
+| **<span style="color:yellow">1</span>** | **<span style="color:yellow">2</span>** | **<span style="color:yellow">3</span>** |
+| --- | --- | --- |
+| ![gif1](images/the_matrix_1_gif.gif) | ![gif2](images/the_matrix_2_gif.gif) | ![gif3](images/the_matrix_3_gif.gif) |
+
+The first most viewed scene, noted as 1 in the video, as soon as Neo meets Agent Smith, he is immediately shot by the gun. The second most viewed scene, noted as 2, plenty of Agent Smiths shoots Neo and Neo reaches out his hand to block the bullets. Lastly, in the most viewed scene 3, Neo engages in combat with Agent Smith.
+
 ### Update
 - **2023.06.07**, Repository created.
 
