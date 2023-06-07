@@ -23,7 +23,7 @@ These are some few examples of Most replayed.
         <img src="images/most_replayed.jpeg" alt="Sample video" width="40%"/>
     </div>
     <div style="flex:1;padding-left:10px;">
-        <table style="width:50%;table-layout:fixed;">
+        <table style="width:40%;table-layout:fixed;">
             <tr>
                 <td>Column 1</td>
                 <td>Column 2</td>
